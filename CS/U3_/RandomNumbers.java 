@@ -1,0 +1,40 @@
+public static int flipCoin(){
+   /*Simulate flipping a coin. Return 0 if heads, 1 if tails
+   Inputs:
+   Outputs:
+      return: 0 if heads, 1 if tails
+   */
+   double flip = Math.random();
+   if(flip < 0.5){//heads
+      return 0;
+   }
+   else{//tails
+      return 1;
+   }
+}
+
+
+public static int flipCoins(int n){
+   /*Simulate flipping a coin n times. Return the total
+   number of tails.
+   Input:
+      int n: the number of times to flip the coin
+   Output:
+      return: the number of tails you flip
+   */
+   int numTails = 0;
+   //flip the coin n times
+   for(int i = 0; i < n; i++){
+      numTails += flipCoin(); //flip the coin, add num. of tails
+   }
+   return numTails;
+}
+
+public static int rollDie(){
+   /*Simulate rolling a 6-sided die. Return 1-6, depending on which
+   value is rolled.
+   Input:
+   Output:
+      return: 1-6 with equal probability
+   */
+}
